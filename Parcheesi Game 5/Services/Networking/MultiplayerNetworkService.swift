@@ -208,11 +208,9 @@ final class MultiplayerNetworkService {
     }
 
     func cancelMatchmaking() async throws {
-        guard let uid = AuthService.shared.currentUserID else { return }
-        // Remove from any rooms where user is listed and room hasn't started
-        // Simplified — full implementation queries and removes
-        FirebaseRef.matchQueueRef().child(uid).removeValue()
-    }
+    guard let uid = AuthService.shared.currentUserID else { return }
+    try await FirebaseRef.matchQueueRef().child(uid).removeValue()
+}
 
     // MARK: - Decode Helpers
 
