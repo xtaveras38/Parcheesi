@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  RemoteConfigDefaults.plist
+  These values are used when Firebase Remote Config cannot be fetched
+  (e.g., first launch with no network). They mirror remoteconfig.template.json.
+-->
+<plist version="1.0">
+<dict>
+	<key>online_multiplayer_enabled</key>
+	<true/>
+	<key>ai_enabled</key>
+	<true/>
+	<key>chat_enabled</key>
+	<true/>
+	<key>iap_enabled</key>
+	<true/>
+	<key>rewarded_ads_enabled</key>
+	<true/>
+	<key>daily_reward_enabled</key>
+	<true/>
+	<key>leaderboard_enabled</key>
+	<true/>
+	<key>friend_system_enabled</key>
+	<true/>
+	<key>spectator_mode_enabled</key>
+	<false/>
+	<key>tournament_mode_enabled</key>
+	<false/>
+	<key>max_players_per_room</key>
+	<integer>4</integer>
+	<key>turn_timer_seconds</key>
+	<integer>60</integer>
+	<key>ai_thinking_delay_ms</key>
+	<integer>800</integer>
+	<key>maintenance_mode</key>
+	<false/>
+	<key>minimum_app_version</key>
+	<string>1.0.0</string>
+</dict>
+</plist>
