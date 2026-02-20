@@ -75,7 +75,7 @@ struct ChatView: View {
                     } label: {
                         Image(systemName: "paperplane.fill")
                             .font(.system(size: 20))
-                            .foregroundStyle(messageText.isEmpty ? .secondary : .accentColor)
+                           .foregroundStyle(messageText.isEmpty ? AnyShapeStyle(.secondary) : AnyShapeStyle(Color.accentColor))
                     }
                     .disabled(messageText.isEmpty)
                 }
