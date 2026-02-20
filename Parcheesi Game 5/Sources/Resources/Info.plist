@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- App Identity -->
+	<key>CFBundleName</key>
+	<string>Parcheesi Quest</string>
+	<key>CFBundleDisplayName</key>
+	<string>Parcheesi Quest</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+
+	<!-- iOS Configuration -->
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UIStatusBarHidden</key>
+	<false/>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+
+	<!-- Supported Orientations (iPhone) -->
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+
+	<!-- Supported Orientations (iPad) -->
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+
+	<!-- Background Modes -->
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+
+	<!-- App Scene Manifest (SwiftUI lifecycle) -->
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+
+	<!-- Privacy Descriptions (required for App Store) -->
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Choose a photo for your profile avatar.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Take a photo to use as your profile avatar.</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>We use this to show you relevant ads and improve your experience.</string>
+
+	<!-- Google Mobile Ads (AdMob) — REPLACE with your real App ID -->
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY</string>
+	<!-- Set to YES only during testing to show test ads -->
+	<key>GADIsAdManagerApp</key>
+	<false/>
+
+	<!-- Firebase / Google Services -->
+	<!-- GoogleService-Info.plist handles all Firebase config -->
+
+	<!-- Network Security -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<!-- Allow Firebase RTDB WebSocket connections -->
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>firebaseio.com</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<false/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+
+	<!-- Localization -->
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+	</array>
+
+	<!-- Launch Screen -->
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>LaunchBackground</string>
+		<key>UIImageName</key>
+		<string>LaunchLogo</string>
+	</dict>
+
+	<!-- Game Controller Support -->
+	<key>GCSupportsControllerUserInteraction</key>
+	<true/>
+
+	<!-- URL Schemes (for Sign in with Apple OAuth redirect) -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<!-- Replace REVERSED_CLIENT_ID from GoogleService-Info.plist -->
+				<string>com.googleusercontent.apps.YOUR-REVERSED-CLIENT-ID</string>
+			</array>
+		</dict>
+	</dict>
+
+	<!-- iTunes File Sharing (disabled for security) -->
+	<key>UIFileSharingEnabled</key>
+	<false/>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<false/>
+</dict>
+</plist>
