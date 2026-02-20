@@ -1,0 +1,36 @@
+{
+  "rules": {
+    "games": {
+      "$gameID": {
+        ".read": "auth != null",
+        ".write": "auth != null",
+        "phase": {
+          ".validate": "newData.val() === 'waiting' || newData.val() === 'rolling' || newData.val() === 'moving' || newData.val() === 'animating' || newData.val() === 'finished'"
+        }
+      }
+    },
+    "rooms": {
+      "$roomID": {
+        ".read": "auth != null",
+        ".write": "auth != null",
+        "players": {
+          "$playerID": {
+            ".write": "auth != null && ($playerID === auth.uid || data.parent().parent().child('hostPlayerID').val() === auth.uid)"
+          }
+        }
+      }
+    },
+    "matchmaking_queue": {
+      "$userID": {
+        ".read": "auth != null && auth.uid === $userID",
+        ".write": "auth != null && auth.uid === $userID"
+      }
+    },
+    "presence": {
+      "$userID": {
+        ".read": "auth != null",
+        ".write": "auth != null && auth.uid === $userID"
+      }
+    }
+  }
+}

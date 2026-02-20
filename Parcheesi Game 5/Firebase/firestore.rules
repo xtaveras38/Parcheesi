@@ -1,0 +1,78 @@
+// Firestore Security Rules for Parcheesi Quest
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ─────────────────────────────────────────────────────
+    // USERS: Read own profile; admins can read all
+    // ─────────────────────────────────────────────────────
+    match /users/{uid} {
+      allow read:  if request.auth != null && (request.auth.uid == uid || isAdmin());
+      allow create: if request.auth != null && request.auth.uid == uid
+                      && validUserCreate();
+      allow update: if request.auth != null && request.auth.uid == uid
+                      && noRoleEscalation()
+                      && !isBannedUser(uid);
+      allow delete: if false; // Deletion handled by Cloud Function only
+
+      // Prevent clients from setting sensitive fields directly
+      function validUserCreate() {
+        return request.resource.data.isBanned == false
+            && request.resource.data.coins <= 500
+            && request.resource.data.gems == 0;
+      }
+
+      function noRoleEscalation() {
+        return !request.resource.data.keys().hasAny(["isBanned", "banReason", "bannedAt"])
+            || resource.data.isBanned == request.resource.data.isBanned;
+      }
+    }
+
+    // ─────────────────────────────────────────────────────
+    // FRIEND REQUESTS: Only sender can create; receiver can update
+    // ─────────────────────────────────────────────────────
+    match /friend_requests/{requestID} {
+      allow read:  if request.auth != null
+                      && (request.auth.uid == resource.data.senderID
+                       || request.auth.uid == resource.data.receiverID);
+      allow create: if request.auth != null
+                      && request.auth.uid == request.resource.data.senderID
+                      && request.resource.data.status == "pending";
+      allow update: if request.auth != null
+                      && request.auth.uid == resource.data.receiverID
+                      && request.resource.data.diff(resource.data).affectedKeys().hasOnly(["status"]);
+      allow delete: if false;
+    }
+
+    // ─────────────────────────────────────────────────────
+    // REPORTS: Authenticated users can create; admins read
+    // ─────────────────────────────────────────────────────
+    match /reports/{reportID} {
+      allow create: if request.auth != null
+                      && request.auth.uid == request.resource.data.reporterID;
+      allow read:   if isAdmin();
+      allow update: if isAdmin();
+      allow delete: if false;
+    }
+
+    // ─────────────────────────────────────────────────────
+    // LEADERBOARD: Public read; only Cloud Functions write
+    // ─────────────────────────────────────────────────────
+    match /leaderboard/{entryID} {
+      allow read:  if true;
+      allow write: if false; // Written by Cloud Function only
+    }
+
+    // ─────────────────────────────────────────────────────
+    // HELPERS
+    // ─────────────────────────────────────────────────────
+    function isAdmin() {
+      return request.auth.token.admin == true;
+    }
+
+    function isBannedUser(uid) {
+      return get(/databases/$(database)/documents/users/$(uid)).data.isBanned == true;
+    }
+  }
+}

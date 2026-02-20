@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Push Notifications -->
+	<key>aps-environment</key>
+	<string>development</string>
+	<!-- Change to "production" before App Store submission -->
+
+	<!-- In-App Purchases -->
+	<key>com.apple.developer.in-app-payments</key>
+	<array>
+		<string>com.parcheesigame.coins.100</string>
+		<string>com.parcheesigame.coins.500</string>
+		<string>com.parcheesigame.coins.2000</string>
+		<string>com.parcheesigame.gems.50</string>
+		<string>com.parcheesigame.gems.200</string>
+		<string>com.parcheesigame.premium.monthly</string>
+		<string>com.parcheesigame.premium.yearly</string>
+	</array>
+
+	<!-- Sign In with Apple -->
+	<key>com.apple.developer.applesignin</key>
+	<array>
+		<string>Default</string>
+	</array>
+
+	<!-- Network Extensions (for presence detection) -->
+	<key>com.apple.security.network.client</key>
+	<true/>
+
+	<!-- Game Center (optional) -->
+	<!-- Uncomment if using GameKit -->
+	<!--
+	<key>com.apple.developer.game-center</key>
+	<true/>
+	-->
+
+	<!-- iCloud (optional, for cross-device save sync) -->
+	<!--
+	<key>com.apple.developer.icloud-container-identifiers</key>
+	<array>
+		<string>iCloud.com.yourcompany.ParcheesiGame</string>
+	</array>
+	<key>com.apple.developer.icloud-services</key>
+	<array>
+		<string>CloudDocuments</string>
+	</array>
+	-->
+</dict>
+</plist>

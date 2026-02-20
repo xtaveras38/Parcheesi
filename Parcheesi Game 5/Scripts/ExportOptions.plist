@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  ExportOptions.plist — used with xcodebuild -exportArchive.
+  Replace YOUR_TEAM_ID with your Apple Developer Team ID.
+-->
+<plist version="1.0">
+<dict>
+	<key>method</key>
+	<string>app-store</string>
+
+	<key>teamID</key>
+	<string>YOUR_TEAM_ID</string>
+
+	<!-- Upload to App Store Connect -->
+	<key>destination</key>
+	<string>upload</string>
+
+	<!-- Include symbols for crash reporting -->
+	<key>uploadSymbols</key>
+	<true/>
+
+	<!-- Do not embed bitcode (deprecated in Xcode 14+) -->
+	<key>compileBitcode</key>
+	<false/>
+
+	<!-- Manage signing automatically -->
+	<key>signingStyle</key>
+	<string>automatic</string>
+
+	<!-- Strip Swift symbols for smaller binary -->
+	<key>stripSwiftSymbols</key>
+	<true/>
+
+	<!-- Thinning: none keeps universal binary for all device sizes -->
+	<key>thinning</key>
+	<string>&lt;none&gt;</string>
+</dict>
+</plist>

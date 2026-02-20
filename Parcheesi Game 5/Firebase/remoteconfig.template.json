@@ -1,0 +1,78 @@
+{
+  "conditions": [
+    {
+      "name": "iOS",
+      "expression": "device.os == 'ios'",
+      "tagColor": "BLUE"
+    }
+  ],
+  "parameters": {
+    "online_multiplayer_enabled": {
+      "defaultValue": { "value": "true" },
+      "description": "Enable/disable online multiplayer globally"
+    },
+    "ai_enabled": {
+      "defaultValue": { "value": "true" },
+      "description": "Enable/disable AI opponent"
+    },
+    "chat_enabled": {
+      "defaultValue": { "value": "true" },
+      "description": "Enable/disable in-game chat"
+    },
+    "iap_enabled": {
+      "defaultValue": { "value": "true" },
+      "description": "Enable/disable in-app purchases"
+    },
+    "rewarded_ads_enabled": {
+      "defaultValue": { "value": "true" },
+      "description": "Enable/disable rewarded ads"
+    },
+    "daily_reward_enabled": {
+      "defaultValue": { "value": "true" },
+      "description": "Enable/disable daily login rewards"
+    },
+    "leaderboard_enabled": {
+      "defaultValue": { "value": "true" },
+      "description": "Enable/disable the global leaderboard"
+    },
+    "friend_system_enabled": {
+      "defaultValue": { "value": "true" },
+      "description": "Enable/disable friends system"
+    },
+    "spectator_mode_enabled": {
+      "defaultValue": { "value": "false" },
+      "description": "Enable spectator mode (future feature)"
+    },
+    "tournament_mode_enabled": {
+      "defaultValue": { "value": "false" },
+      "description": "Enable tournament mode (future feature)"
+    },
+    "max_players_per_room": {
+      "defaultValue": { "value": "4" },
+      "description": "Maximum players allowed per room"
+    },
+    "turn_timer_seconds": {
+      "defaultValue": { "value": "60" },
+      "description": "Seconds per turn in online play"
+    },
+    "ai_thinking_delay_ms": {
+      "defaultValue": { "value": "800" },
+      "description": "AI thinking animation delay in ms"
+    },
+    "maintenance_mode": {
+      "defaultValue": { "value": "false" },
+      "description": "Put app in maintenance mode"
+    },
+    "minimum_app_version": {
+      "defaultValue": { "value": "1.0.0" },
+      "description": "Minimum required app version"
+    }
+  },
+  "version": {
+    "versionNumber": "1",
+    "updateTime": "2024-01-01T00:00:00Z",
+    "updateUser": { "email": "admin@parcheesigame.com" },
+    "updateOrigin": "CONSOLE",
+    "updateType": "INCREMENTAL_UPDATE"
+  }
+}

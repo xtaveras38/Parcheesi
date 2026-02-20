@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00000000001001A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000001001A /* AppDelegate.swift */; };
+		B00000000002001A /* ParcheesiGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000002001A /* ParcheesiGameApp.swift */; };
+		B00000000003001A /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000003001A /* FeatureFlags.swift */; };
+		B00000000004001A /* GameModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000004001A /* GameModels.swift */; };
+		B00000000005001A /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000005001A /* UserProfile.swift */; };
+		B00000000006001A /* GameRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000006001A /* GameRules.swift */; };
+		B00000000007001A /* GameStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000007001A /* GameStateManager.swift */; };
+		B00000000008001A /* AIPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000008001A /* AIPlayer.swift */; };
+		B00000000009001A /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000009001A /* GameViewModel.swift */; };
+		B0000000000A001A /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000A001A /* AuthViewModel.swift */; };
+		B0000000000B001A /* LobbyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000B001A /* LobbyViewModel.swift */; };
+		B0000000000C001A /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000C001A /* ProfileViewModel.swift */; };
+		B0000000000D001A /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000D001A /* StoreViewModel.swift */; };
+		B0000000000E001A /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000E001A /* BoardView.swift */; };
+		B0000000000F001A /* BoardScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000000F001A /* BoardScene.swift */; };
+		B00000000010001A /* BoardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000010001A /* BoardLayout.swift */; };
+		B00000000011001A /* GameScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000011001A /* GameScreenView.swift */; };
+		B00000000012001A /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000012001A /* ChatView.swift */; };
+		B00000000013001A /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000013001A /* MainMenuView.swift */; };
+		B00000000014001A /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000014001A /* AuthView.swift */; };
+		B00000000015001A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000015001A /* RootView.swift */; };
+		B00000000016001A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000016001A /* SettingsView.swift */; };
+		B00000000017001A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000017001A /* ProfileView.swift */; };
+		B00000000018001A /* LobbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000018001A /* LobbyView.swift */; };
+		B00000000019001A /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000019001A /* StoreView.swift */; };
+		B0000000001A001A /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000001A001A /* FirebaseService.swift */; };
+		B0000000001B001A /* UserProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000001B001A /* UserProfileService.swift */; };
+		B0000000001C001A /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000001C001A /* StorageService.swift */; };
+		B0000000001D001A /* MultiplayerNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000001D001A /* MultiplayerNetworkService.swift */; };
+		B0000000001E001A /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000001E001A /* AudioService.swift */; };
+		B0000000001F001A /* HapticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0000000001F001A /* HapticService.swift */; };
+		B00000000020001A /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000020001A /* AnalyticsService.swift */; };
+		B00000000021001A /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000021001A /* AppStateManager.swift */; };
+		B00000000022001A /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000022001A /* ThemeManager.swift */; };
+		B00000000023001A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000023001A /* AuthService.swift */; };
+		B00000000024001A /* DailyRewardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000024001A /* DailyRewardManager.swift */; };
+		B00000000025001A /* UserStatsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000025001A /* UserStatsService.swift */; };
+		B00000000026001A /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000026001A /* NotificationService.swift */; };
+		B00000000027001A /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000027001A /* AdManager.swift */; };
+		B00000000028001A /* GameRulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000028001A /* GameRulesTests.swift */; };
+		B00000000029001A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00000000029001A /* Assets.xcassets */; };
+		B0000000002A001A /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0000000002A001A /* RemoteConfigDefaults.plist */; };
+		B0000000002B001A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0000000002B001A /* Info.plist */; };
+		B0000000002F001A /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0000000002F001A /* SpriteKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F00000000001001A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F00000000002001A /* ParcheesiGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcheesiGameApp.swift; sourceTree = "<group>"; };
+		F00000000003001A /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlags.swift; sourceTree = "<group>"; };
+		F00000000004001A /* GameModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModels.swift; sourceTree = "<group>"; };
+		F00000000005001A /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		F00000000006001A /* GameRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rules/GameRules.swift; sourceTree = "<group>"; };
+		F00000000007001A /* GameStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State/GameStateManager.swift; sourceTree = "<group>"; };
+		F00000000008001A /* AIPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI/AIPlayer.swift; sourceTree = "<group>"; };
+		F00000000009001A /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		F0000000000A001A /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		F0000000000B001A /* LobbyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewModel.swift; sourceTree = "<group>"; };
+		F0000000000C001A /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		F0000000000D001A /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
+		F0000000000E001A /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		F0000000000F001A /* BoardScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardScene.swift; sourceTree = "<group>"; };
+		F00000000010001A /* BoardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardLayout.swift; sourceTree = "<group>"; };
+		F00000000011001A /* GameScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenView.swift; sourceTree = "<group>"; };
+		F00000000012001A /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		F00000000013001A /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		F00000000014001A /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		F00000000015001A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F00000000016001A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F00000000017001A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F00000000018001A /* LobbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyView.swift; sourceTree = "<group>"; };
+		F00000000019001A /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		F0000000001A001A /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase/FirebaseService.swift; sourceTree = "<group>"; };
+		F0000000001B001A /* UserProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase/UserProfileService.swift; sourceTree = "<group>"; };
+		F0000000001C001A /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase/StorageService.swift; sourceTree = "<group>"; };
+		F0000000001D001A /* MultiplayerNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking/MultiplayerNetworkService.swift; sourceTree = "<group>"; };
+		F0000000001E001A /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio/AudioService.swift; sourceTree = "<group>"; };
+		F0000000001F001A /* HapticService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics/HapticService.swift; sourceTree = "<group>"; };
+		F00000000020001A /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics/AnalyticsService.swift; sourceTree = "<group>"; };
+		F00000000021001A /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
+		F00000000022001A /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		F00000000023001A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		F00000000024001A /* DailyRewardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRewardManager.swift; sourceTree = "<group>"; };
+		F00000000025001A /* UserStatsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsService.swift; sourceTree = "<group>"; };
+		F00000000026001A /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		F00000000027001A /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
+		F00000000028001A /* GameRulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRulesTests.swift; sourceTree = "<group>"; };
+		F00000000029001A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sources/Resources/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		F0000000002A001A /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Sources/Resources/RemoteConfigDefaults.plist; sourceTree = "<group>"; };
+		F0000000002B001A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Sources/Resources/Info.plist; sourceTree = "<group>"; };
+		F0000000002C001A /* ParcheesiGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ParcheesiGame.entitlements; sourceTree = "<group>"; };
+		F0000000002D001A /* ParcheesiGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParcheesiGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0000000002E001A /* ParcheesiGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParcheesiGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0000000002F001A /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		A000000000AA001A = {
+			isa = PBXGroup;
+			children = (
+				A000000000AB001A /* Sources */,
+				A000000000AC001A /* Tests */,
+				A000000000AD001A /* Resources */,
+				A000000000AE001A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A000000000AE001A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0000000002D001A /* ParcheesiGame.app */,
+				F0000000002E001A /* ParcheesiGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A000000000AF001A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0000000002F001A /* SpriteKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A000000000AD001A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000029001A /* Assets.xcassets */,
+				F0000000002A001A /* RemoteConfigDefaults.plist */,
+				F0000000002B001A /* Info.plist */,
+				F0000000002C001A /* ParcheesiGame.entitlements */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A000000000AB001A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A000000000B0001A /* App */,
+				A000000000B1001A /* Models */,
+				A000000000B2001A /* ViewModels */,
+				A000000000B3001A /* Views */,
+				A000000000B4001A /* Engine */,
+				A000000000B5001A /* Services */,
+				A000000000B6001A /* Utils */,
+			);
+			name = Sources;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A000000000B0001A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000001001A /* AppDelegate.swift */,
+				F00000000002001A /* ParcheesiGameApp.swift */,
+				F00000000003001A /* FeatureFlags.swift */,
+			);
+			name = App;
+			path = App;
+			sourceTree = "<group>";
+		};
+		A000000000B1001A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000004001A /* GameModels.swift */,
+				F00000000005001A /* UserProfile.swift */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A000000000B2001A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000009001A /* GameViewModel.swift */,
+				F0000000000A001A /* AuthViewModel.swift */,
+				F0000000000B001A /* LobbyViewModel.swift */,
+				F0000000000C001A /* ProfileViewModel.swift */,
+				F0000000000D001A /* StoreViewModel.swift */,
+			);
+			name = ViewModels;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A000000000B3001A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A000000000C0001A /* Board */,
+				A000000000C1001A /* Game */,
+				A000000000C2001A /* Menu */,
+				A000000000C3001A /* Profile */,
+				A000000000C4001A /* Lobby */,
+				A000000000C5001A /* Store */,
+			);
+			name = Views;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A000000000C0001A /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				F0000000000E001A /* BoardView.swift */,
+				F0000000000F001A /* BoardScene.swift */,
+				F00000000010001A /* BoardLayout.swift */,
+			);
+			name = Board;
+			path = Board;
+			sourceTree = "<group>";
+		};
+		A000000000C1001A /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000011001A /* GameScreenView.swift */,
+				F00000000012001A /* ChatView.swift */,
+			);
+			name = Game;
+			path = Game;
+			sourceTree = "<group>";
+		};
+		A000000000C2001A /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000013001A /* MainMenuView.swift */,
+				F00000000014001A /* AuthView.swift */,
+				F00000000015001A /* RootView.swift */,
+				F00000000016001A /* SettingsView.swift */,
+			);
+			name = Menu;
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		A000000000C3001A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000017001A /* ProfileView.swift */,
+			);
+			name = Profile;
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A000000000C4001A /* Lobby */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000018001A /* LobbyView.swift */,
+			);
+			name = Lobby;
+			path = Lobby;
+			sourceTree = "<group>";
+		};
+		A000000000C5001A /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000019001A /* StoreView.swift */,
+			);
+			name = Store;
+			path = Store;
+			sourceTree = "<group>";
+		};
+		A000000000B4001A /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000006001A /* GameRules.swift */,
+				F00000000007001A /* GameStateManager.swift */,
+				F00000000008001A /* AIPlayer.swift */,
+			);
+			name = Engine;
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		A000000000B5001A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F0000000001A001A /* FirebaseService.swift */,
+				F0000000001B001A /* UserProfileService.swift */,
+				F0000000001C001A /* StorageService.swift */,
+				F0000000001D001A /* MultiplayerNetworkService.swift */,
+				F0000000001E001A /* AudioService.swift */,
+				F0000000001F001A /* HapticService.swift */,
+				F00000000020001A /* AnalyticsService.swift */,
+			);
+			name = Services;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A000000000B6001A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000021001A /* AppStateManager.swift */,
+				F00000000022001A /* ThemeManager.swift */,
+				F00000000023001A /* AuthService.swift */,
+				F00000000024001A /* DailyRewardManager.swift */,
+				F00000000025001A /* UserStatsService.swift */,
+				F00000000026001A /* NotificationService.swift */,
+				F00000000027001A /* AdManager.swift */,
+			);
+			name = Utils;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A000000000AC001A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000028001A /* GameRulesTests.swift */,
+			);
+			name = Tests;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D000000000AA001A /* ParcheesiGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D000000000AB001A /* Build configuration list for PBXNativeTarget "ParcheesiGame" */;
+			buildPhases = (
+				D000000000AC001A /* Sources */,
+				D000000000AD001A /* Resources */,
+				D000000000AE001A /* Frameworks */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = ParcheesiGame;
+			packageProductDependencies = (
+				E000000000AA001A /* FirebaseAuth */,
+				E000000000AB001A /* FirebaseFirestore */,
+				E000000000AC001A /* FirebaseDatabase */,
+				E000000000AD001A /* FirebaseStorage */,
+				E000000000AE001A /* FirebaseMessaging */,
+				E000000000AF001A /* FirebaseRemoteConfig */,
+				E000000000B0001A /* FirebaseAnalytics */,
+				E000000000B1001A /* GoogleMobileAds */,
+			);
+			productName = ParcheesiGame;
+			productReference = F0000000002D001A /* ParcheesiGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D000000000BA001A /* ParcheesiGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D000000000BB001A /* Build configuration list for PBXNativeTarget "ParcheesiGameTests" */;
+			buildPhases = (
+				D000000000BC001A /* Sources */,
+			);
+			buildRules = ();
+			dependencies = (
+				D000000000BD001A /* PBXTargetDependency */,
+			);
+			name = ParcheesiGameTests;
+			productName = ParcheesiGameTests;
+			productReference = F0000000002E001A /* ParcheesiGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C000000000AA001A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					D000000000AA001A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					D000000000BA001A = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = D000000000AA001A;
+					};
+				};
+			};
+			buildConfigurationList = C000000000AB001A /* Build configuration list for PBXProject "ParcheesiGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = A000000000AA001A;
+			packageReferences = (
+				E100000000AA001A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E100000000AB001A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
+			productRefGroup = A000000000AE001A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D000000000AA001A /* ParcheesiGame */,
+				D000000000BA001A /* ParcheesiGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D000000000AC001A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000001001A /* AppDelegate.swift in Sources */,
+				B00000000002001A /* ParcheesiGameApp.swift in Sources */,
+				B00000000003001A /* FeatureFlags.swift in Sources */,
+				B00000000004001A /* GameModels.swift in Sources */,
+				B00000000005001A /* UserProfile.swift in Sources */,
+				B00000000006001A /* GameRules.swift in Sources */,
+				B00000000007001A /* GameStateManager.swift in Sources */,
+				B00000000008001A /* AIPlayer.swift in Sources */,
+				B00000000009001A /* GameViewModel.swift in Sources */,
+				B0000000000A001A /* AuthViewModel.swift in Sources */,
+				B0000000000B001A /* LobbyViewModel.swift in Sources */,
+				B0000000000C001A /* ProfileViewModel.swift in Sources */,
+				B0000000000D001A /* StoreViewModel.swift in Sources */,
+				B0000000000E001A /* BoardView.swift in Sources */,
+				B0000000000F001A /* BoardScene.swift in Sources */,
+				B00000000010001A /* BoardLayout.swift in Sources */,
+				B00000000011001A /* GameScreenView.swift in Sources */,
+				B00000000012001A /* ChatView.swift in Sources */,
+				B00000000013001A /* MainMenuView.swift in Sources */,
+				B00000000014001A /* AuthView.swift in Sources */,
+				B00000000015001A /* RootView.swift in Sources */,
+				B00000000016001A /* SettingsView.swift in Sources */,
+				B00000000017001A /* ProfileView.swift in Sources */,
+				B00000000018001A /* LobbyView.swift in Sources */,
+				B00000000019001A /* StoreView.swift in Sources */,
+				B0000000001A001A /* FirebaseService.swift in Sources */,
+				B0000000001B001A /* UserProfileService.swift in Sources */,
+				B0000000001C001A /* StorageService.swift in Sources */,
+				B0000000001D001A /* MultiplayerNetworkService.swift in Sources */,
+				B0000000001E001A /* AudioService.swift in Sources */,
+				B0000000001F001A /* HapticService.swift in Sources */,
+				B00000000020001A /* AnalyticsService.swift in Sources */,
+				B00000000021001A /* AppStateManager.swift in Sources */,
+				B00000000022001A /* ThemeManager.swift in Sources */,
+				B00000000023001A /* AuthService.swift in Sources */,
+				B00000000024001A /* DailyRewardManager.swift in Sources */,
+				B00000000025001A /* UserStatsService.swift in Sources */,
+				B00000000026001A /* NotificationService.swift in Sources */,
+				B00000000027001A /* AdManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D000000000AD001A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000029001A /* Assets.xcassets in Resources */,
+				B0000000002A001A /* RemoteConfigDefaults.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D000000000AE001A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0000000002F001A /* SpriteKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D000000000BC001A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000028001A /* GameRulesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXContainerItemProxy section */
+		D000000000BE001A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C000000000AA001A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D000000000AA001A;
+			remoteInfo = ParcheesiGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXTargetDependency section */
+		D000000000BD001A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D000000000AA001A /* ParcheesiGame */;
+			targetProxy = D000000000BE001A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E100000000AA001A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = "10.0.0";
+			};
+		};
+		E100000000AB001A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = "10.0.0";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E000000000AA001A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E100000000AA001A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E000000000AB001A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E100000000AA001A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		E000000000AC001A /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E100000000AA001A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		E000000000AD001A /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E100000000AA001A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		E000000000AE001A /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E100000000AA001A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		E000000000AF001A /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E100000000AA001A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		E000000000B0001A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E100000000AA001A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E000000000B1001A /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E100000000AB001A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C000000000AC001A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C000000000AD001A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D000000000AF001A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ParcheesiGame.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sources/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.ParcheesiGame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D000000000B0001A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ParcheesiGame.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sources/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.ParcheesiGame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D000000000C0001A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.ParcheesiGameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.9;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParcheesiGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ParcheesiGame";
+			};
+			name = Debug;
+		};
+		D000000000C1001A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.ParcheesiGameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.9;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParcheesiGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ParcheesiGame";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C000000000AB001A /* Build configuration list for PBXProject "ParcheesiGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C000000000AC001A /* Debug */,
+				C000000000AD001A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D000000000AB001A /* Build configuration list for PBXNativeTarget "ParcheesiGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D000000000AF001A /* Debug */,
+				D000000000B0001A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D000000000BB001A /* Build configuration list for PBXNativeTarget "ParcheesiGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D000000000C0001A /* Debug */,
+				D000000000C1001A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = C000000000AA001A /* Project object */;
+}
